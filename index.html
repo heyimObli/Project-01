@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obli's Fitness</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: "Montserrat Alternates", sans-serif;
+      margin: 0px;
+      padding: 0px;
+      background: url("img/bg.jpg");
+      background-size: 160%;
+      color: white;
+    }
+    .left {
+      /* border: 2px solid red; */
+      display: inline-block;
+      position: absolute;
+      left: 60px;
+      top: 20px;
+    }
+    .mid {
+      display: block;
+      width: 45%;
+      margin: 20px auto;
+      /* border: 2px solid green; */
+    }
+    .right {
+      position: absolute;
+      right: 40px;
+      top: 34px;
+      /* border: 2px solid blue; */
+      display: inline-block;
+    }
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      display: inline-block;
+      font-size: 20px;
+    }
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 34px 23px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      color: rgb(180, 180, 180);
+    }
+    .left img {
+      width: 100px;
+      filter: invert(100%);
+      
+    }
+    .left div {
+      text-align: center;
+      font-size: 20px;
+      line-height: 19px;
+      margin: 2px;
+    }
+    .btn {
+      font-family: "Montserrat Alternates", sans-serif;
+      margin: 0px 9px;
+      background-color: black;
+      color: white;
+      padding: 4px 14px;
+      border: 2px solid rgb(148, 148, 148);
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: rgb(148, 148, 148);
+    }
+    .container {
+      border: 2px solid rgb(255, 255, 242);
+      margin: 105px 55px;
+      padding: 90px 33px;
+      width: 33%;
+      border-radius: 20px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 450px;
+        padding: 7px;
+        border: 2px solid black;
+        margin: 12px auto;
+        border-radius: 10px;
+        font-size: 25px;
+        font-family: "Montserrat Alternates", sans-serif;
+    }
+    .container h3{
+        text-align: center;
+    }
+    .container button{
+       display: block;
+       margin: 25px auto;
+       width: 465px;
+    }
+
+  </style>
+  <body>
+    <header class="header">
+      <!-- Left for logo -->
+      <div style="text-align: center;" class="left">
+        <img src="img/gym.jpg" alt="" />
+        <div>Obli's Fitness</div>
+      </div>
+      <!-- Mid for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Right for buutons -->
+      <div class="right">
+        <button class="btn">Call Us</button
+        ><button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="container">
+        <h3>Join The Best Gym in The World Now</h3>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="Name" placeholder="Enter your name:">
+            </div>
+            <div class="form-group">
+                <input type="text" name="Age" placeholder="Enter your Age:">
+            </div>
+            <div class="form-group">
+                <input type="text" name="Number" placeholder="Enter your Number:">
+            </div>
+            <div class="form-group">
+                <input type="text" name="Gender" placeholder="Enter your Gender:">
+            </div>
+        
+        <button class="btn">Sumbit</button>
+        </form>
+    </div>
+  </body>
+</html>
